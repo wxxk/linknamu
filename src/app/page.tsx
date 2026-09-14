@@ -2,9 +2,9 @@ import { ProfileHeader } from "@/components/ProfileHeader";
 import { LinkCardList } from "@/components/LinkCardList";
 
 const links = [
-  { label: "깃허브", href: "https://github.com/wxxk", icon: "😺" },
-  { label: "블로그", href: "https://blog.naver.com/dwde2", icon: "🧩" },
-  { label: "이메일", href: "mailto:lsw@kcc.co.kr", icon: "📨" },
+  { id: "github", label: "깃허브", href: "https://github.com/wxxk", icon: "😺" },
+  { id: "blog", label: "블로그", href: "https://blog.naver.com/dwde2", icon: "🧩" },
+  { id: "email", label: "이메일", href: "mailto:lsw@kcc.co.kr", icon: "📨" },
 ];
 
 export default function Home() {
