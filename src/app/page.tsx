@@ -1,25 +1,20 @@
 import { ProfileHeader } from "@/components/ProfileHeader";
 import { LinkCardList } from "@/components/LinkCardList";
-import { GithubIcon, LinkedinIcon, BlogIcon } from "@/components/icons";
 
 const links = [
-  { label: "GitHub", href: "https://github.com/", icon: <GithubIcon /> },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/",
-    icon: <LinkedinIcon />,
-  },
-  { label: "Blog", href: "https://example.com/blog", icon: <BlogIcon /> },
+  { label: "깃허브", href: "https://github.com/wxxk", icon: "😺" },
+  { label: "블로그", href: "https://blog.naver.com/dwde2", icon: "🧩" },
+  { label: "이메일", href: "mailto:lsw@kcc.co.kr", icon: "📨" },
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-center bg-bg px-6 py-16 sm:py-24">
-      <div className="flex w-full max-w-sm flex-col gap-10">
+    <main className="flex min-h-screen justify-center bg-gradient-to-b from-cream via-cream to-apricot px-6 py-20 sm:py-28">
+      <div className="flex w-full max-w-sm flex-col gap-12 sm:gap-14">
         <ProfileHeader
-          name="김클로"
-          bio="세계 최강 바이브 코더"
-          avatarInitial="클"
+          name="이상욱"
+          bio="풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요"
+          avatarSrc="/profile.jpg"
         />
         <LinkCardList links={links} />
       </div>
