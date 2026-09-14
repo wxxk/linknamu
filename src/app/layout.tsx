@@ -3,13 +3,11 @@ import { Noto_Serif_KR, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
 const notoSerifKR = Noto_Serif_KR({
-  subsets: ["korean"],
   weight: ["600", "700"],
   variable: "--font-display-kr",
 });
 
 const notoSansKR = Noto_Sans_KR({
-  subsets: ["korean"],
   weight: ["400", "500"],
   variable: "--font-body-kr",
 });
